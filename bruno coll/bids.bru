@@ -1,0 +1,27 @@
+meta {
+  name: bids
+  type: http
+  seq: 5
+}
+
+get {
+  url: https://kitek.ktkv.dev/marketplace/api/items/:id/bids
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 1766616292025
+}
+
+body:json {
+  {
+    "username": "capy",
+    "password": "password123"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
