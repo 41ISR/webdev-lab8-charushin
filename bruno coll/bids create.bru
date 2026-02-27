@@ -1,0 +1,30 @@
+meta {
+  name: bids create
+  type: http
+  seq: 10
+}
+
+post {
+  url: https://kitek.ktkv.dev/marketplace/api/items/:id/bids
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 1766396704038
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3NjY2NzAwMjUzNzAsInVzZXJuYW1lIjoiY2FweSIsImlhdCI6MTc2NjY3MDExMiwiZXhwIjoxNzY2NzU2NTEyfQ.5xUs16Yn2JHgZPHwBq8Tq-C3rUQUucftqa7fhk50tvQ
+}
+
+body:json {
+  {
+    "amount": 1000000
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

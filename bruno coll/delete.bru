@@ -1,0 +1,33 @@
+meta {
+  name: delete
+  type: http
+  seq: 9
+}
+
+delete {
+  url: https://kitek.ktkv.dev/marketplace/api/items/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 1766670977229
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3NjY2NzAwMjUzNzAsInVzZXJuYW1lIjoiY2FweSIsImlhdCI6MTc2NjY3MDExMiwiZXhwIjoxNzY2NzU2NTEyfQ.5xUs16Yn2JHgZPHwBq8Tq-C3rUQUucftqa7fhk50tvQ
+}
+
+body:json {
+  { 
+  "title": "capybara",
+      "description": "альт капибара",
+      "price": 666666,
+  "imageUrl": "https://i.pinimg.com/736x/50/29/6c/50296ce6adf1b2bdd81ba8d247692964.jpg"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

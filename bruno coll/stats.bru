@@ -1,0 +1,23 @@
+meta {
+  name: stats
+  type: http
+  seq: 6
+}
+
+get {
+  url: https://kitek.ktkv.dev/marketplace/api/stats
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "username": "capy",
+    "password": "password123"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
